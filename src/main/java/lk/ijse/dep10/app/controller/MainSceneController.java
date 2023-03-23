@@ -2,7 +2,12 @@ package lk.ijse.dep10.app.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MainSceneController {
 
@@ -29,7 +34,13 @@ public class MainSceneController {
     }
 
     @FXML
-    void btnStudentOnAction(ActionEvent event) {
+    void btnStudentOnAction(ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/ManageStudents.fxml"))));
+        stage.setTitle("Student Management System");
+        stage.show();
+        stage.setResizable(false);
+        stage.centerOnScreen();
 
     }
 
