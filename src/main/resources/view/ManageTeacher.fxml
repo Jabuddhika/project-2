@@ -10,14 +10,14 @@
 
 <AnchorPane prefHeight="518.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.ManageTeacherController">
     <children>
-        <Button fx:id="btnNewCustomer" layoutX="28.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnNewTeacherOnAction" prefHeight="34.0" prefWidth="154.0" text="+New Customer" />
+        <Button fx:id="btnNewTeacher" layoutX="28.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnNewTeacherOnAction" prefHeight="34.0" prefWidth="154.0" text="+New Teacher" />
         <TextField fx:id="txtId" layoutX="156.0" layoutY="82.0" prefHeight="34.0" prefWidth="496.0" AnchorPane.bottomAnchor="402.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="82.0" />
         <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="82.0" prefHeight="34.0" prefWidth="108.0" text="ID" />
         <TextField fx:id="txtName" layoutX="156.0" layoutY="138.0" prefHeight="34.0" prefWidth="496.0" AnchorPane.bottomAnchor="346.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="138.0" />
         <TextField fx:id="txtAddress" layoutX="156.0" layoutY="195.0" prefHeight="34.0" prefWidth="496.0" AnchorPane.bottomAnchor="289.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="195.0" />
         <Label alignment="CENTER_RIGHT" layoutX="39.0" layoutY="138.0" prefHeight="34.0" prefWidth="108.0" text="Name" />
         <Label alignment="CENTER_RIGHT" layoutX="39.0" layoutY="195.0" prefHeight="34.0" prefWidth="108.0" text="Address" />
-        <TableView fx:id="tblCustomer" layoutX="23.0" layoutY="304.0" onSort="#tblCustomerOnAction" prefHeight="200.0" prefWidth="630.0">
+        <TableView fx:id="tblTeacher" layoutX="23.0" layoutY="304.0" onSort="#tblTeacherOnAction" prefHeight="200.0" prefWidth="630.0">
             <columns>
                 <TableColumn prefWidth="145.0" text="ID" />
                 <TableColumn minWidth="1.0" prefWidth="237.0" text="Name" />
@@ -26,10 +26,10 @@
         </TableView>
         <Button fx:id="btnSave" layoutX="156.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: lightBlue;" text="Save" />
         <Button fx:id="btnDelete" layoutX="295.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="34.0" prefWidth="128.0" text="Delete" />
-        <Label layoutX="252.0" layoutY="39.0" prefHeight="16.0" prefWidth="154.0" text="Manage Customer">
-            <font>
-                <Font name="System Bold" size="15.0" />
-            </font>
-        </Label>
+      <Label layoutX="252.0" layoutY="39.0" prefHeight="16.0" prefWidth="154.0" text="Manage Teachers">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

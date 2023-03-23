@@ -2,12 +2,15 @@ package lk.ijse.dep10.app.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
-public class ManageStudentController {
+public class ManageTeacherController {
 
+    public Button btnNewTeacher;
+    public TableColumn tblTeachers;
+    public TableView tblTeacher;
+    public TableView tblCustomer;
+    public Button btnNewCustomer;
     @FXML
     private Button btnDelete;
 
@@ -64,4 +67,15 @@ public class ManageStudentController {
 
     }
 
+    public void btnNewTeacherOnAction(ActionEvent event) {
+
+    }
+
+    public void tblTeacherOnAction(SortEvent<TableView> tableViewSortEvent) {
+
+    }
+
+    public void tblCustomerOnAction(SortEvent<TableView> tableViewSortEvent) {
+
+    }
 }
