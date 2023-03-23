@@ -10,6 +10,7 @@ import lk.ijse.dep10.app.contoller.util.Employee;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class ManageEmployeeController {
 
@@ -61,7 +62,21 @@ public class ManageEmployeeController {
     @FXML
     void btnSaveOnAction(ActionEvent event) {
         Connection connection= DBConnection.getInstance().getConnection();
+        try {
+            PreparedStatement pst = connection.prepareStatement
+                    ("INSERT INTO Employee (id, name, address) VALUES (?,?,?)");
+            pst.setString(1,txtId.getText());
+            pst.setString(2,txtName.getText());
+            pst.setString(3,txtAddress.getText());
+            pst.executeUpdate();
+            Employee employee = new Employee(txtId.getText(), txtName.getText(), txtAddress.getText());
+            tblEmployee.getItems().add(employee);
+        } catch (SQLException e) {
+            System.out.println("save Error");
+            throw new RuntimeException(e);
+        }
 
     }
+
 
 }
