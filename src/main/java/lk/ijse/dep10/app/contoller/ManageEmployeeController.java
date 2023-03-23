@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import lk.ijse.dep10.app.contoller.util.Employee;
 
 public class ManageEmployeeController {
 
@@ -18,7 +19,7 @@ public class ManageEmployeeController {
     private Button btnSave;
 
     @FXML
-    private TableView<?> tblEmployee;
+    private TableView<Employee> tblEmployee;
 
     @FXML
     private TextField txtAddress;
