@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="251.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.MainSceneController">
+   <children>
+      <VBox layoutX="65.0" layoutY="60.0" spacing="10.0" AnchorPane.bottomAnchor="63.8" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="59.599999999999994" AnchorPane.topAnchor="60.0">
+         <children>
+            <Button fx:id="btnCustomers" minWidth="150.0" mnemonicParsing="false" onAction="#btnCustomersOnAction" text="Manage Customers" />
+            <Button fx:id="btnStudent" minWidth="150.0" mnemonicParsing="false" onAction="#btnStudentOnAction" text="Manage Students" />
+            <Button fx:id="btnTeachers" minWidth="150.0" mnemonicParsing="false" onAction="#btnTeachersOnAction" text="Manage Teachers" />
+            <Button fx:id="btnEmployees" minWidth="150.0" mnemonicParsing="false" onAction="#btnEmployeesOnAction" text="Manage Employees" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
